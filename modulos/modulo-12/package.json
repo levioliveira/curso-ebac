@@ -1,0 +1,20 @@
+{
+  "name": "modulo-12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "npx cypress run --browser edge",
+    "cy:open": "npx cypress open",
+    "cy:report": "npx cypress run --record --key ec0a2b65-007b-4b5a-b637-0ed1f3567301"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.9.0",
+    "faker": "^5.5.3"
+  }
+}

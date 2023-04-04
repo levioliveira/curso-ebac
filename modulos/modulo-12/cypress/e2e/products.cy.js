@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe('Funcionalidade Página de produtos', () => {
-    before(() => {
+    beforeEach(() => {
         cy.visit('produtos/')
     });
 
@@ -19,7 +19,7 @@ describe('Funcionalidade Página de produtos', () => {
         cy.get('.single_add_to_cart_button').click()
         cy.get('[class="mini-cart-items"]').should('contain', quantity)
         cy.get('.woocommerce-message').should('contain', quantity + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
-    })
+    });
 
     it('Deve limpar o carrinho após adicionar produtos da lista', () => {
         var quantity = 10
@@ -40,13 +40,13 @@ describe('Funcionalidade Página de produtos', () => {
         let quantity = 10
         cy.addProducts('Abominable Hoodie', quantity, 'M', 'Blue')
         cy.get('.woocommerce-message').should('contain', quantity + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
-    })
+    });
 
-    it.only('Deve adicionar um produtos da lista ao carrinho com Comandos customizados 2', () => {
+    it('Deve adicionar um produtos da lista ao carrinho com Comandos customizados 2', () => {
         let quantity = 2
-        cy.addProducts('Ajax Full-Zip Sweatshirt', quantity, 'XL', 'Red')
-        cy.get('.woocommerce-message').should('contain', quantity + ' × “Ajax Full-Zip Sweatshirt” foram adicionados no seu carrinho.')
-    })
+        cy.addProducts('Abominable Hoodie', quantity, 'XL', 'Red')
+        cy.get('.woocommerce-message').should('contain', quantity + ' × “Abominable Hoodie” foram adicionados no seu carrinho.')
+    });
 });
 
 

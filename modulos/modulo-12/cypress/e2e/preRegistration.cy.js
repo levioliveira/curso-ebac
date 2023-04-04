@@ -41,7 +41,7 @@ context('Funcionalidade de Pré Cadastro', () => {
         cy.get('.woocommerce-error').should('contain', 'é um campo obrigatório.')
     });
     
-    it.only('Deve completar o pré-cadastro com sucesso usando Comandos customizados', () => {
+    it('Deve completar o pré-cadastro com sucesso usando Comandos customizados', () => {
         cy.preRegistration(randomEmail, randomPassword, randomFirstName, randomLastName)
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
     });

@@ -1,0 +1,41 @@
+[
+    {
+        "firstName": "Carlos",
+        "lastName": "Oliveira",
+        "company": "Caps",
+        "country": "Brazil",
+        "address": "Rua Liberdade",
+        "addressComplement": "Próximo a arena",
+        "city": "Mogi das Cruzes",
+        "state": "São Paulo", 
+        "postCode": "014478785",
+        "phone": "(11) 985856891",
+        "email": "coliv@gmail.com"
+    }, 
+    {
+        "firstName": "Miriam",
+        "lastName": "Castelo",
+        "company": "Forbes",
+        "country": "Brasil",
+        "address": "Rua Damasceno",
+        "addressComplement": "Próximo a arena",
+        "city": "Curitiba",
+        "state": "Paraná", 
+        "postCode": "82821002",
+        "phone": "(21) 989741443",
+        "email": "miriamcast@gmail.com"
+    },
+    {
+        "firstName": "Paulo",
+        "lastName": "Mota",
+        "company": "Jaisa SA",
+        "country": "Brazil",
+        "address": "Rua Esquador",
+        "addressComplement": "Próximo a igreja central",
+        "city": "Maceió",
+        "state": "Alagos", 
+        "postCode": "074789582",
+        "phone": "(78) 995411002",
+        "email": "pmota221@gmail.com"
+    }
+]
